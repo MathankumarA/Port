@@ -1,0 +1,274 @@
+/* *{
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(3, 36, 36);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    padding: 15px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+h1{
+    font-family;
+    font-size: 70px;
+    color: white;
+}
+input{
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+p{
+    color: white;
+}
+i{
+    color: orange;
+}
+button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: orange;
+}
+.content{
+    float: left;
+}
+img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    margin-top: 150px;
+    position: absolute;
+    bottom: 180px;
+    left: 750px;
+
+}
+.color-box{
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    background-color: orange;
+    border-radius: 20px;
+    height: 350px;
+    width: 500px;
+    z-index: -1;
+    transform: translatex(150px);
+}
+
+
+
+ */
+
+ * {
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(3, 36, 36);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Setting background color for navbar */
+    padding: 10px; /* Adding some padding for better appearance */
+}
+
+.navbar p {
+    margin-left: 10px; /* Adjusting spacing between icon and text */
+    color: white; /* Setting text color */
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.navbar i {
+    color: orange;
+}
+
+
+h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+i {
+    color: orange;
+}
+
+button {
+    width: 100%;
+    max-width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: orange;
+    margin: 0 auto;
+    display: block;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.img {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.color-box {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar {
+        width: auto;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+    
+
+    .content {
+        flex: 1;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .img {
+        flex: 1;
+        text-align: right;
+    }
+
+    .color-box {
+        display: block;
+    }
+
+    img {
+        margin-top: 150px;
+    }
+}
+
